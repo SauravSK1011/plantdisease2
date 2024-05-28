@@ -7,7 +7,7 @@ class SignInScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Sign In'),
+        title: Text('Sign Up'),
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
@@ -42,7 +42,7 @@ class _SignInFormState extends State<SignInForm> {
       print('Logging in with username: $_username and password: $_password');
       if (st) {
         ScaffoldMessenger.of(context)
-            .showSnackBar(SnackBar(content: Text('Logged in successfully!')));
+            .showSnackBar(SnackBar(content: Text('SignUp in successfully!')));
       }
       return st;
     }
@@ -108,7 +108,7 @@ class _SignInFormState extends State<SignInForm> {
                 }
               }
             },
-            child: Text('Sign In'),
+            child: Text('Sign Up'),
           ),
         ],
       ),
